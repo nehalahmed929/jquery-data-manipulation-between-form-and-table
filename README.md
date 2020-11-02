@@ -11,3 +11,6 @@ Single page jquery data manipulation between form and table
 <hr/>
 
 Feel free to clone and play with it :)
+
+live demo: https://nehal-jquery-data-manipulate.herokuapp.com/
+---
