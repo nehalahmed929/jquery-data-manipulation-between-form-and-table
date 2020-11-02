@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+
+    <!-- jQuery and JS bundle w/ Popper.js -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="bg-light">
+    <div class="row">
+      <div class="col-12 p-3 bg-dark text-center text-info">
+        <h1>jQuery Table Data Manipulation</h1>
+      </div>
+      <div class="col-md-12 p-5">
+        <table
+          class="table table-striped table-hover table-bordered table-sm text-center"
+        >
+          <thead class="thead-dark">
+            <tr>
+              <th scope="col">Name</th>
+              <th scope="col">Age</th>
+              <th scope="col">Gender</th>
+              <th scope="col">City</th>
+              <th scope="col">Action</th>
+            </tr>
+          </thead>
+          <tbody class="tbody"></tbody>
+        </table>
+      </div>
+      <div class="col-md-8 px-5">
+        <form class="p-3 ml-5 bg-dark rounded text-white">
+          <h4 class="mb-3 pb-2 border-bottom border-warning">
+            Add/Update records from here
+          </h4>
+          <div class="form-row">
+            <div class="form-group col">
+              <label for="exampleInputEmail1">Name</label>
+              <input
+                type="text"
+                class="form-control name form-control-sm"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+              />
+              <input value="" type="hidden" class="id" />
+            </div>
+            <div class="form-group col">
+              <label for="exampleInputEmail1">Age</label>
+              <input
+                type="number"
+                class="form-control age form-control-sm"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+              />
+            </div>
+          </div>
+          <div
+            class="form-row align-items-center border-bottom border-secondary mb-3"
+          >
+            <label for="exampleInputEmail1" class="col-2 m-0">Gender :</label>
+            <div class="form-check form-check-inline col-1">
+              <input
+                class="form-check-input male form-control-sm"
+                type="radio"
+                name="radioBtn"
+                id="inlineRadio1"
+                value="Male"
+              />
+              <label class="form-check-label" for="inlineRadio1">Male</label>
+            </div>
+            <div class="form-check form-check-inline col-1">
+              <input
+                class="form-check-input female form-control-sm"
+                type="radio"
+                name="radioBtn"
+                id="inlineRadio2"
+                value="Female"
+              />
+              <label class="form-check-label" for="inlineRadio2">Female</label>
+            </div>
+            <div class="form-group col-6 ml-auto">
+              <label for="exampleFormControlSelect1">City</label>
+              <select
+                class="form-control form-control-sm city"
+                id="exampleFormControlSelect1"
+              >
+                <option>Lahore</option>
+                <option>Islamabad</option>
+                <option>Karachi</option>
+                <option>Quetta</option>
+                <option>Peshawar</option>
+              </select>
+            </div>
+          </div>
+
+          <button type="button" class="btn btn-sm btn-warning reset">
+            Reset
+          </button>
+          <button type="button" class="btn btn-sm btn-success my-btn">
+            Add
+          </button>
+          <button type="button" class="btn btn-primary btn-sm update">
+            Update
+          </button>
+        </form>
+      </div>
+      <div class="col-md-4">
+        <h2 class="mt-4">Description</h2>
+        <p class="mt-4">It is a single page application</p>
+        <ul>
+          <li>Add new record through form to the table</li>
+          <li>Edit existing records in table through form</li>
+          <li>Delete record from table</li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-12 p-2 mt-5 bg-dark text-center text-info">
+      <h2>
+        Made by
+        <a href="https://www.facebook.com/nehalahmad929" class="text-warning"
+          >Nehal Ahmed</a
+        >
+      </h2>
+    </div>
+    <!-- jQuery and JS bundle w/ Popper.js -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+      crossorigin="anonymous"
+    ></script>
+    <script src="myJs.js"></script>
+  </body>
+</html>
