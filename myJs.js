@@ -13,7 +13,7 @@ $(document).ready(function () {
     var name = $(".name").val();
     var age = $(".age").val();
     var city = $(".city").val();
-    var gender = $('input[name="radioBtn"]:checked').val();
+    var gender = $('input[name="inlineRadioOptions"]:checked').val();
 
     console.log("clicked");
 
@@ -39,7 +39,7 @@ $(document).ready(function () {
 
     var gender = row.find("td:eq(2)").text();
 
-    var getG = $(`input[name=radioBtn][value=${gender}]`);
+    var getG = $(`input[name=inlineRadioOptions][value=${gender}]`);
     getG.prop("checked", true);
     row.prop("id", id);
 
