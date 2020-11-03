@@ -30,6 +30,8 @@ $(document).ready(function () {
       </button>
         </td>
       </tr>`);
+
+    formEmpty();
   });
 
   $(".tbody").on("click", ".edit", function (e) {
